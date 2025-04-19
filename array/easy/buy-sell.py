@@ -10,7 +10,8 @@ def buysell(prices):
         if prices[i] >prices[i-1]:
             max_profit+= prices[i] - prices[i-1]
     return max_profit
-   
+# Time: O(n) — Looping through the array
+# Space: O(1) — No additional space used
 # Example usage:    
 prices = [7,1,5,3,6,4]
 print(buysell(prices))  # Output: 7

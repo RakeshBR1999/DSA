@@ -32,6 +32,9 @@ def knapsack(weights, values, W):
     dp = [0] * (W + 1)
 
     for i in range(n):
+        # why are we going from W to weights[i] - 1?
+        # Because we want to ensure that we are not using the same item more than once
+        # and we are updating the dp array in place.
         for w in range(W, weights[i] - 1, -1):
             dp[w] = max(dp[w], values[i] + dp[w - weights[i]])
 
