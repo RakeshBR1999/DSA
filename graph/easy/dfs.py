@@ -2,6 +2,8 @@
 # from a given graph
 from collections import defaultdict
 
+# Time Complexity: O(V + E), where V is the number of vertices and E is the number of edges
+# Space Complexity: O(V) where V is the number of vertices and used stack to store the vertices
 
 # This class represents a directed graph using
 # adjacency list representation
@@ -27,8 +29,8 @@ class Graph:
 		visited.add(v)
 		print(v, end=' ')
 
-		# Recur for all the vertices
-		# adjacent to this vertex
+		# Recursively visit all the vertices
+		# that are adjacent to this vertex
 		for neighbour in self.graph[v]:
 			if neighbour not in visited:
 				self.DFSUtil(neighbour, visited)

@@ -37,3 +37,23 @@ def isToeplitzMatrix(matrix):
 
 # Time Complexity: O(m * n) — We check each element in the matrix once.
 # Space Complexity: O(1) — We only use a few variables for tracking indices and values.
+
+# how toeplitz matrix looks like
+# [[1, 2, 3, 4],
+#  [5, 1, 2, 3],
+#  [9, 5, 1, 2],
+#  [4, 9, 5, 1]]
+# The diagonals are:
+# 1 -> 2 -> 3 -> 4
+# 5 -> 1 -> 2 -> 3
+# 9 -> 5 -> 1 -> 2
+# 4 -> 9 -> 5 -> 1
+# The diagonals are constant, so this is a Toeplitz matrix.
+# Example usage:
+matrix = [
+    [1, 2, 3, 4],
+    [5, 1, 2, 3],
+    [9, 5, 1, 2],
+    [4, 9, 5, 1]
+]
+print(isToeplitzMatrix(matrix))  # Output: True

@@ -49,8 +49,9 @@ class Graph:
 					queue.append(i)
 					visited[i] = True
 
+# Time Complexity: O(V + E), where V is the number of vertices and E is the number of edges
+# Space Complexity: O(V) where V is the number of vertices and used queue to store the vertices
 
-# Driver code
 if __name__ == '__main__':
 
 	# Create a graph given in
@@ -67,4 +68,3 @@ if __name__ == '__main__':
 		" (starting from vertex 2)")
 	g.BFS(2)
 
-# This code is contributed by Neelam Yadav
